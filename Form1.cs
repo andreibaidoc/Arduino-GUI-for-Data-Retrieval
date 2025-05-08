@@ -15,7 +15,6 @@ namespace Arduino_GUI_for_Data_Retrieval
         public Form1()
         {
             InitializeComponent();
-            serialPort1.Open();
         }
 
         private void Form1_Load(object sender, EventArgs e)

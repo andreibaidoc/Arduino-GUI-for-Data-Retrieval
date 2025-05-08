@@ -30,26 +30,79 @@
         {
             this.components = new System.ComponentModel.Container();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.connect_usb_button = new System.Windows.Forms.Button();
+            this.Title = new System.Windows.Forms.Label();
+            this.SubtitleDescriptionLabel = new System.Windows.Forms.Label();
+            this.connections_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // connect_usb_button
+            // 
+            this.connect_usb_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.connect_usb_button.Location = new System.Drawing.Point(61, 256);
+            this.connect_usb_button.Name = "connect_usb_button";
+            this.connect_usb_button.Size = new System.Drawing.Size(192, 44);
+            this.connect_usb_button.TabIndex = 0;
+            this.connect_usb_button.Text = "Connect via USB";
+            this.connect_usb_button.UseVisualStyleBackColor = true;
+            // 
+            // Title
+            // 
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(38, 48);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(364, 32);
+            this.Title.TabIndex = 1;
+            this.Title.Text = "Explorover Data Retriever";
+            // 
+            // SubtitleDescriptionLabel
+            // 
+            this.SubtitleDescriptionLabel.AutoSize = true;
+            this.SubtitleDescriptionLabel.Location = new System.Drawing.Point(39, 93);
+            this.SubtitleDescriptionLabel.Name = "SubtitleDescriptionLabel";
+            this.SubtitleDescriptionLabel.Size = new System.Drawing.Size(576, 75);
+            this.SubtitleDescriptionLabel.TabIndex = 2;
+            this.SubtitleDescriptionLabel.Text = "This program lets the user retrieve the data from the ExploRover \r\nthrough difere" +
+    "nt methods, such that the user can import, visualize \r\nand examine the humidity," +
+    " temperature and pressure parameters.";
+            // 
+            // connections_label
+            // 
+            this.connections_label.AutoSize = true;
+            this.connections_label.Location = new System.Drawing.Point(39, 211);
+            this.connections_label.Name = "connections_label";
+            this.connections_label.Size = new System.Drawing.Size(186, 25);
+            this.connections_label.TabIndex = 3;
+            this.connections_label.Text = "Connection options:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1451, 900);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ClientSize = new System.Drawing.Size(1244, 776);
+            this.Controls.Add(this.connections_label);
+            this.Controls.Add(this.SubtitleDescriptionLabel);
+            this.Controls.Add(this.Title);
+            this.Controls.Add(this.connect_usb_button);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Explorover Data Retriever";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.Button connect_usb_button;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label SubtitleDescriptionLabel;
+        private System.Windows.Forms.Label connections_label;
     }
 }
 
